@@ -1,0 +1,11 @@
+com\cashmachine\controller\MainController.class
+com\cashmachine\service\UserDetailsServiceImpl.class
+com\cashmachine\service\UserService.class
+com\cashmachine\entity\enums\UserRoleEnum.class
+com\cashmachine\config\WebAppConfig.class
+com\cashmachine\service\UserServiceImpl.class
+com\cashmachine\controller\LoginController.class
+com\cashmachine\service\UserDetailsService.class
+com\cashmachine\config\Initializer.class
+com\cashmachine\entity\User.class
+com\cashmachine\config\SecurityConfig.class
