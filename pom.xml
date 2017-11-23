@@ -9,10 +9,10 @@
   <url>http://maven.apache.org</url>
 
   <properties>
-    <spring.mvc>4.0.0.RELEASE</spring.mvc>
+    <spring.mvc>4.3.9.RELEASE</spring.mvc>
     <javax.servlet>3.0.1</javax.servlet>
     <jstl.version>1.2</jstl.version>
-    <spring.securiry>3.2.0.RELEASE</spring.securiry>
+    <spring.securiry>4.2.3.RELEASE</spring.securiry>
   </properties>
 
   <dependencies>
@@ -64,6 +64,13 @@
       <groupId>org.springframework.security</groupId>
       <artifactId>spring-security-taglibs</artifactId>
       <version>${spring.securiry}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-test</artifactId>
+      <version>${spring.securiry}</version>
+      <scope>test</scope>
     </dependency>
 
     <dependency>
