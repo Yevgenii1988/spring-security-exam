@@ -13,16 +13,20 @@ public class User {
     @Column(name = "id")
     private int id;
 
+    @Column(name = "username")
     private String username;
 
+    @Column(name = "password")
     private String password;
 
+    @Column(name = "amount")
     private int amount;
 
     public User(String login, String password) {
         this.username = login;
         this.password = password;
     }
+
     public User() {
 
     }
