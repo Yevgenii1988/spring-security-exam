@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc73f9d5-afb5-4471-b7f6-39772375c5c0" name="Default" comment="">
+    <list default="true" id="dc73f9d5-afb5-4471-b7f6-39772375c5c0" name="Default" comment="jsp">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/pages/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/pages/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/pages/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/pages/login.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -58,8 +57,8 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="40" column="96" lean-forward="false" selection-start-line="40" selection-start-column="96" selection-end-line="40" selection-end-column="96" />
+            <state relative-caret-position="357">
+              <caret line="39" column="25" lean-forward="false" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -441,12 +440,20 @@
       <option name="presentableId" value="Default" />
       <updated>1510993548427</updated>
       <workItem from="1510993550449" duration="10438000" />
-      <workItem from="1511429313998" duration="672000" />
+      <workItem from="1511429313998" duration="956000" />
     </task>
+    <task id="LOCAL-00001" summary="jsp">
+      <created>1511430216666</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1511430216666</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11110000" />
+    <option name="totallyTimeSpent" value="11394000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -489,6 +496,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="jsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="jsp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -812,8 +823,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="40" column="96" lean-forward="false" selection-start-line="40" selection-start-column="96" selection-end-line="40" selection-end-column="96" />
+        <state relative-caret-position="357">
+          <caret line="39" column="25" lean-forward="false" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
           <folding />
         </state>
       </provider>
