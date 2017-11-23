@@ -34,7 +34,7 @@
         <h1>HELLO</h1>
         <p class="lead">hello - here we are trying to log in.</p>
         <sec:authorize access="!isAuthenticated()">
-            <p><a class="btn btn-lg btn-success" href="<c:url value="/username" />" role="button">Enter</a></p>
+            <p><a class="btn btn-lg btn-success" href="<c:url value="/login" />" role="button">Enter</a></p>
         </sec:authorize>
         <sec:authorize access="isAuthenticated()">
             <p>Your login: <sec:authentication property="principal.username" /></p>
