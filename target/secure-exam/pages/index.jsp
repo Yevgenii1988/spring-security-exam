@@ -32,13 +32,13 @@
 
     <div class="jumbotron" style="margin-top: 20px;">
         <h1>HELLO</h1>
-        <p class="lead">hello - here we trying to log in.</p>
+        <p class="lead">hello - here we are trying to log in.</p>
         <sec:authorize access="!isAuthenticated()">
-            <p><a class="btn btn-lg btn-success" href="<c:url value="/login" />" role="button">Войти</a></p>
+            <p><a class="btn btn-lg btn-success" href="<c:url value="/username" />" role="button">Enter</a></p>
         </sec:authorize>
         <sec:authorize access="isAuthenticated()">
-            <p>Ваш логин: <sec:authentication property="principal.username" /></p>
-            <p><a class="btn btn-lg btn-danger" href="<c:url value="/logout" />" role="button">Выйти</a></p>
+            <p>Your login: <sec:authentication property="principal.username" /></p>
+            <p><a class="btn btn-lg btn-danger" href="<c:url value="/logout" />" role="button">Exit</a></p>
 
         </sec:authorize>
     </div>
