@@ -16,6 +16,12 @@ public class Role {
 
     private String role;
 
+    public Role(int id, int user_id, String role) {
+        this.id = id;
+        this.user_id = user_id;
+        this.role = role;
+    }
+
     @Id
     @Column(name = "id", unique = true, nullable = false, precision = 5, scale = 0)
     public int getId() {

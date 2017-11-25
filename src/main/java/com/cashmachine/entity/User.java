@@ -30,6 +30,13 @@ public class User {
 
     }
 
+    public User(int id, String username, String password, int amount) {
+        this.id = id;
+        this.username = username;
+        this.password = password;
+        this.amount = amount;
+    }
+
     @Id
     @Column(name = "id", unique = true, nullable = false, precision = 5, scale = 0)
     public int getId() {
