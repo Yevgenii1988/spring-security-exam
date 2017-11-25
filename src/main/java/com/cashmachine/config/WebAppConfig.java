@@ -1,5 +1,8 @@
 package com.cashmachine.config;
 
+import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer;
+import org.springframework.context.annotation.Import;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import com.cashmachine.service.UserDetailsServiceImpl;
 import org.springframework.context.annotation.Bean;
@@ -14,6 +17,7 @@ import org.springframework.web.servlet.view.UrlBasedViewResolver;
 @Configuration
 @EnableWebMvc
 @ComponentScan("com.cashmachine")
+@Import({RepositoryConfig.class})
 public class WebAppConfig extends WebMvcConfigurerAdapter {
 
     @Override
@@ -34,5 +38,14 @@ public class WebAppConfig extends WebMvcConfigurerAdapter {
     @Bean
     public UserDetailsService getUserDetailsService(){
         return new UserDetailsServiceImpl();
+    }
+
+    @Bean
+    public PropertyPlaceholderConfigurer getPropertyPlaceholderConfigurer()
+    {
+        PropertyPlaceholderConfigurer ppc = new PropertyPlaceholderConfigurer();
+        ppc.setLocation(new ClassPathResource("application.properties"));
+        ppc.setIgnoreUnresolvablePlaceholders(true);
+        return ppc;
     }
 }
