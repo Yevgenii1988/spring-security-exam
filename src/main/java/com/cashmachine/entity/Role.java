@@ -32,16 +32,16 @@ public class Role {
         this.id = id;
     }
 
-    @Column(name = "id_user")
+    /*@Column(name = "id_user")
     public int getUser_id() {
         return user_id;
     }
 
     public void setUser_id(int user_id) {
         this.user_id = user_id;
-    }
+    }*/
 
-    @Column(name = "Role")
+    @Column(name = "role")
     public String getRole() {
         return role;
     }
