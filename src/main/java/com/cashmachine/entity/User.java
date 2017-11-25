@@ -9,17 +9,16 @@ import javax.persistence.Table;
 @Table(name = "user")
 public class User {
 
-    @Id
-    @Column(name = "id")
+
     private int id;
 
-    @Column(name = "username")
+
     private String username;
 
-    @Column(name = "password")
+
     private String password;
 
-    @Column(name = "amount")
+
     private int amount;
 
     public User(String login, String password) {
@@ -31,6 +30,8 @@ public class User {
 
     }
 
+    @Id
+    @Column(name = "id", unique = true, nullable = false, precision = 5, scale = 0)
     public int getId() {
         return id;
     }
@@ -39,6 +40,7 @@ public class User {
         this.id = id;
     }
 
+    @Column(name = "amount")
     public int getAmount() {
         return amount;
     }
@@ -47,16 +49,20 @@ public class User {
         this.amount = amount;
     }
 
+    @Column(name = "username", nullable = false, length = 20)
     public String getUsername() {
         return username;
     }
+
     public void setUsername(String username) {
         this.username = username;
     }
 
+    @Column(name = "password", nullable = false, length = 50)
     public String getPassword() {
         return password;
     }
+
     public void setPassword(String password) {
         this.password = password;
     }
