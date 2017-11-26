@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.hibernate5.HibernateTemplate;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
+import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 
 
 import javax.sql.DataSource;
@@ -58,13 +59,13 @@ public class RepositoryConfig {
         return hibernateTemplate;
     }
     @Bean
-    public AnnotationSessionFactoryBean getSessionFactory()
+    public LocalSessionFactoryBean getSessionFactory()
     {
-        AnnotationSessionFactoryBean asfb = new AnnotationSessionFactoryBean();
-        asfb.setDataSource(getDataSource());
-        asfb.setHibernateProperties(getHibernateProperties());
-        asfb.setPackagesToScan(new String[]{"com.cashmachine.entity"});
-        return asfb;
+        LocalSessionFactoryBean lsfb = new LocalSessionFactoryBean();
+        lsfb.setDataSource(getDataSource());
+        lsfb.setHibernateProperties(getHibernateProperties());
+        lsfb.setPackagesToScan(new String[]{"com.cashmachine.entity"});
+        return lsfb;
     }
     @Bean
     public Properties getHibernateProperties()
