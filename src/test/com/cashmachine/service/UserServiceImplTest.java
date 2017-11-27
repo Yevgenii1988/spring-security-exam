@@ -18,7 +18,7 @@ import static org.junit.Assert.*;
 @ContextConfiguration(classes = SecurityConfig.class)
 public class UserServiceImplTest {
 
-    @Autowired
+    /*@Autowired
     UserService userService;
 
     @Test
@@ -26,5 +26,5 @@ public class UserServiceImplTest {
     public void testGetUser() {
         User john = userService.getUser("john");
         assertEquals("john", john.getUsername());
-    }
+    }*/
 }

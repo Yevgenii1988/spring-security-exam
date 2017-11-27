@@ -52,8 +52,8 @@ public class WebAppConfig extends WebMvcConfigurerAdapter {
         return ppc;
     }
 
-    @Bean
+    /*@Bean
     public UserService getUserService(){
         return new UserServiceImpl();
-    }
+    }*/
 }

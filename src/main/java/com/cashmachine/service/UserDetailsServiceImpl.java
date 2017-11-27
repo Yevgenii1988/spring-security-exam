@@ -14,12 +14,12 @@ import java.util.Set;
 
 public class UserDetailsServiceImpl implements org.springframework.security.core.userdetails.UserDetailsService {
 
-    @Autowired
-    private UserService userService;
+    /*@Autowired
+    private UserService userService;*/
 
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
-        User user = userService.getUser("colibri");
+        /*User user = userService.getUser("colibri");
 
         Set<GrantedAuthority> roles = new HashSet();
         roles.add(new SimpleGrantedAuthority(UserRoleEnum.USER.name()));
@@ -30,6 +30,7 @@ public class UserDetailsServiceImpl implements org.springframework.security.core
                         user.getPassword(),
                         roles);
 
-        return userDetails;
+        return userDetails;*/
+        return null;
     }
 }

@@ -12,13 +12,13 @@ public class Role {
 
     private int id;
 
-    private int user_id;
+    //private int user_id;
 
     private String role;
 
-    public Role(int id, int user_id, String role) {
+    public Role(int id, String role) {
         this.id = id;
-        this.user_id = user_id;
+        //this.user_id = user_id;
         this.role = role;
     }
 

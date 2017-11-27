@@ -19,7 +19,7 @@ public class User {
     private String password;
 
 
-    private int amount;
+    private double amount;
 
     public User(String login, String password) {
         this.username = login;
@@ -30,7 +30,7 @@ public class User {
 
     }
 
-    public User(int id, String username, String password, int amount) {
+    public User(int id, String username, String password, double amount) {
         this.id = id;
         this.username = username;
         this.password = password;
@@ -38,7 +38,7 @@ public class User {
     }
 
     @Id
-    @Column(name = "id", unique = true, nullable = false, precision = 5, scale = 0)
+    @Column(name = "id")
     public int getId() {
         return id;
     }
@@ -48,15 +48,15 @@ public class User {
     }
 
     @Column(name = "amount")
-    public int getAmount() {
+    public double getAmount() {
         return amount;
     }
 
-    public void setAmount(int amount) {
+    public void setAmount(double amount) {
         this.amount = amount;
     }
 
-    @Column(name = "username", nullable = false, length = 20)
+    @Column(name = "username")
     public String getUsername() {
         return username;
     }
@@ -65,7 +65,7 @@ public class User {
         this.username = username;
     }
 
-    @Column(name = "pass", nullable = false, length = 50)
+    @Column(name = "pass")
     public String getPassword() {
         return password;
     }
