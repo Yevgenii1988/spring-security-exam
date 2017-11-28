@@ -23,7 +23,7 @@ public class Role {
     }
 
     @Id
-    @Column(name = "id", unique = true, nullable = false, precision = 5, scale = 0)
+    @Column(name = "id")
     public int getId() {
         return id;
     }
