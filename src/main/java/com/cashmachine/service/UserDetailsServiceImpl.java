@@ -2,7 +2,6 @@ package com.cashmachine.service;
 
 import com.cashmachine.entity.User;
 import com.cashmachine.entity.enums.UserRoleEnum;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -32,6 +31,6 @@ public class UserDetailsServiceImpl implements org.springframework.security.core
                         roles);
 
         return userDetails;
-        //return null;
+
     }
 }
