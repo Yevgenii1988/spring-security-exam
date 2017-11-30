@@ -1,7 +1,5 @@
 package com.cashmachine.config;
 
-import com.cashmachine.service.UserService;
-import com.cashmachine.service.UserServiceImpl;
 import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer;
 import org.springframework.context.annotation.Import;
 import org.springframework.core.io.ClassPathResource;
@@ -18,7 +16,7 @@ import org.springframework.web.servlet.view.UrlBasedViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("com.cashmachine")
+@ComponentScan("com.cashmachine.*")
 @Import({RepositoryConfig.class})
 public class WebAppConfig extends WebMvcConfigurerAdapter {
 
