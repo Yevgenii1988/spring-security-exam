@@ -16,7 +16,7 @@ import org.springframework.web.servlet.view.UrlBasedViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("com.cashmachine.*")
+@ComponentScan("com.cashmachine")
 @Import({RepositoryConfig.class})
 public class WebAppConfig extends WebMvcConfigurerAdapter {
 

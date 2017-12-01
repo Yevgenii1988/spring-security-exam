@@ -20,6 +20,7 @@ public class UserController {
     @RequestMapping(method = RequestMethod.GET)
     public String getUsers(Model model){
         List<User> users = userService.getAllUsers();
-        return "index";
+        model.addAttribute("users", users);
+        return "users";
     }
 }
